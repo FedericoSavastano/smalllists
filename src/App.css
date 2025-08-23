@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+#root {
+    background-color: ghostwhite;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin: 1rem;
+    background: #f6ebe6;
+}
+
+.title {
+    font-family: 'Playwrite PL', cursive;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.list {
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.category-title {
+    list-style: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: #d61375;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.list-items {
+    height: 100%;
+    max-height: 100%;
+}
+
+.hide {
+    overflow: hidden;
+    transition: 0.4s max-height;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 0.5em;
+}
+
+.button-list-element {
+    flex: 10;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: #ffe5d9;
+    border: none;
+    margin: 5px;
+    border-radius: 20px 0px 0px 20px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.button-list-element:hover {
+    background: #f8d0bd;
+}
+
+.button-list-element:before,
+.button-list-element:after {
+    content: '\00a0\00a0';
+}
+
+.button-delete {
+    flex: 2;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.button-delete:hover {
+    background: #f8d0bd;
+}
+
+.accordion-body {
+    background: #fdf4f0;
+}
+
+.category-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.category-selector {
+    flex: 10;
+}
+
+.category-new-btn {
+    flex: 1;
+    background-color: #d61375;
+}
+
+.footer {
+    background: #f8ddd1;
+    padding: 2rem 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.footer-buttons > .btn {
+    white-space: nowrap;
+    border-radius: 50px;
+    color: black;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: #f19d77;
+    border: none;
+    margin: 5px;
+    border-radius: 20px 20px;
+    --bs-btn-hover-border-color: rgb(121, 121, 202);
+    --bs-btn-hover-bg: rgb(121, 121, 202);
+}
+
+.add-btn {
+    --bs-btn-bg: #f19d77 !important;
+    --bs-btn-color: black !important;
+    --bs-btn-border-color: none !important;
+    --bs-btn-hover-border-color: rgb(121, 121, 202) !important;
+    --bs-btn-hover-bg: rgb(121, 121, 202) !important;
+    color: black;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: #f19d77;
+    border: none;
+    margin: 5px;
+    border-radius: 20px 20px;
+    /* text-shadow: 2px 2px 2px white; */
+    --bs-btn-hover-border-color: rgb(121, 121, 202);
+    --bs-btn-hover-bg: rgb(121, 121, 202);
+}
+
+.footer-signature {
+    text-align: center;
+}
+
+.add-item.accordion {
+    --bs-accordion-active-bg: #eeee5c !important;
+    --bs-accordion-bg: #79aefe !important;
+    --bs-accordion-btn-color: white !important;
+    --bs-accordion-active-color: white !important;
+}
